@@ -1,47 +1,60 @@
 import React from "react";
-
+import axios from "axios";
+import { useNavigate,Link} from "react-router-dom";
+import LoginImg from './component/login.jpeg'
 export default function Login(props)
 {
-   const[logindata,setlogindata]=React.useState({
-    email:"",
-    password:""
+   const[email,setemail]=React.useState("")
+   const[password,setpassword]=React.useState("")
+ 
 
-   })
-    console.log(logindata)
-   function handlechange(event){
-    setlogindata(function(prev)
-    {
-        return {...prev,[event.target.name]:event.target.value}
+   async function submit(e)
+{
+    e.preventDefault(); 
+    try{
+        await axios.post("http://localhost:3000/",{
+           email,password
     })
 
-   }
+    }
+    catch(e){
+        console.log(e)
+    }
+
+}
     return <>
-      
+         <div className="login--page">
+        <img src= {LoginImg} id="login" alt="login" />
+        
+          <div id="cover">
         <h2>Login</h2>
         
-       <form className="login--form">
+       <form className="login--form"  action="POST">
         
        <label htmlFor="email">email</label>
         <input 
         type="email"
         name="email"
-        value={logindata.email}
+        value={email}
         id="email"
         placeholder="********.com"
-        onChange={handlechange}
+        onChange={(e)=>{setemail(e.target.value)}}
         />
         <label htmlFor="password">password</label>
         <input 
          type="password"
          name="password"
-         value={logindata.password}
+         value={password}
          id="password"
          placeholder="************"
-         onChange={handlechange}
+         onChange={(e)=>{setpassword(e.target.value)}}
           />
-          <button type="submit">Log In</button>
+          <button type="submit" onClick={submit}>Log In</button>
        </form>
-       <button className="link--btn" onClick={()=>props.togglepage("register")}>Don't have an account? Register here.</button>
-     
+       <Link to="/register">
+       <button className="link--btn">Don't have an account? Register here.</button>
+       </Link>
+     </div>
+     </div>
     </>
 }
