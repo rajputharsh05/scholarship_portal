@@ -4,7 +4,6 @@ import Website from "./Website";
 import Login from'./Login'
 import React from "react";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-
 import Register from "./Register"
 import LoginImg from './component/login.jpeg'
 function App() {
@@ -20,20 +19,14 @@ function App() {
     console.log(obj)
    }
   return (
-   
     <>
-        
         <Router>
         <Routes>
          <Route path="/" element={<Login />}/>
          <Route path="/register" element={<Register />}/>
          <Route path="/website" element={<Website />}/>
         </Routes>
-        </Router>
-          
-      
-    
-    
+        </Router> 
     {validated && <Website />}
     </>
   );

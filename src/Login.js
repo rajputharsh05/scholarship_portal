@@ -45,7 +45,7 @@ export default function Login(props) {
               name="email"
               value={email}
               id="email"
-              placeholder="********.com"
+              placeholder="Your Email Here"
               onChange={(e) => {
                 setemail(e.target.value);
               }}
@@ -56,7 +56,7 @@ export default function Login(props) {
               name="password"
               value={password}
               id="password"
-              placeholder="************"
+              placeholder="Your Pasword"
               onChange={(e) => {
                 setpassword(e.target.value);
               }}

@@ -1,18 +1,16 @@
-
 {
     "slides":[
-
         {
-            "src":"https://assets.leetcode.com/users/images/5756c00b-f7ca-4c48-9700-550020ed667a_1652094066.947554.png",
+            "src":"https://gyandhan.s3.amazonaws.com/uploads/ckeditor/pictures/1081/content_Scholarships_for_Indian_Students_to_study_abroad.png",
             "alt":"leetcode"
         }
         ,
-        {    "src":"https://static.digit.in/default/tr:w-1200/7abce1b06f735bcf68907bc5fafa4133ab7893e9.jpeg",
+        {    "src":"https://s3-ap-southeast-1.amazonaws.com/buddy4study/blog/uploads/2018/09/13125436/Top-Government-Scholarships-in-India.jpg",
             "alt":"codechef"
         }
         ,
         {
-            "src":"https://hrcdn.net/og/default.jpg",
+            "src":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKMIEyJevmeDNhzg71oaq-O2J1C9pzE9wQ4w&usqp=CAU",
             "alt":"hackerrank"
         }
     ]

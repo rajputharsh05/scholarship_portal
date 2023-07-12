@@ -18,7 +18,7 @@ export default function Website() {
         <>
         <nav>
             
-            <div className="icon">Contest_<b style={{color: 'green'}}>i</b>nfo</div>
+            <div className="icon">Scholarship.<b style={{color: 'green'}}>IO</b></div>
             <form   onSubmit={handleclick}>
                 <div className="searchbox">
                 <input id="input"type="text" placeholder="Search here" onChange={handlechange}

@@ -57,7 +57,7 @@ export default function Register(props) {
               type="email"
               name="email"
               id="email"
-              placeholder="********.com"
+              placeholder="Your Email Here"
               value={email}
               onChange={(e) => {
                 setemail(e.target.value);
@@ -68,7 +68,7 @@ export default function Register(props) {
               type="password"
               name="password"
               id="password"
-              placeholder="************"
+              placeholder="Your Password"
               value={password}
               onChange={(e) => {
                 setpassword(e.target.value);
